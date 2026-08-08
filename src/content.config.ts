@@ -1,5 +1,5 @@
-import { defineCollection } from "astro/content/config";
-import { z } from "astro/zod";
+import { defineCollection } from "astro:content";
+import { z } from "zod";
 
 const blog = defineCollection({
     schema: z.object({
