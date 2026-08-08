@@ -1,4 +1,7 @@
 ---
+import Navbar from "../components/Navbar.astro"
+import Footer from "../components/Footer.astro"
+
 interface Props {
     title?: string;
 }
@@ -18,8 +21,12 @@ const {
 </head>
 
 <body class="bg-zinc-950 text-white">
+    <Navbar />
 
-    <slot />
+    <main class="mx-auto max-w-6xl px-6 py-10">
+        <slot />
+    </main>
 
+    <Footer />
 </body>
 </html>
